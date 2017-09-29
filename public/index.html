@@ -5,19 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chairs!!!!!!!!!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
+  <div class='wrapper'>
+  <div class='container'>
   <h1>Chair Application</h1>
-  <table>
+  <table class="table-condensed">
     <thead>
       <tr>
-       <td>Model</td>
-       <td>Type</td>
+       <th>Model</th>
+       <th>Type</th>
       </tr>
     </thead>
   <tbody id="chairTable">
   </tbody>
   </table>
+  </div>
+  <div class='container'>
 <h2> Add a New Chair </h2>
   <table>
     <thead>
@@ -31,9 +36,13 @@
   <tr>
     <td><input id="addModel" placeholder="add a model"></input></td>
     <td><input id="addType" placeholder="add a type"></input></td>
+    <td><button class="btn btn-primary" onclick="add()">add a new chair</button></td>
   </tr>
   </table>
-  <button onclick="add()">add a new chair</button>
+
+  
+</div>
+</div>
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

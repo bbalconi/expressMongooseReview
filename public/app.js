@@ -7,8 +7,8 @@ function setTable() {
       var openingTr = "<tr>";
       var modelTd = "<td class='foo'><input class='modelInput' data-id=" + c._id + " value='" + c.model + "'></input></td><td>";
       var typeTd = "<input class='typeInput' data-id=" + c._id + " value='" + c.type + "'></input></td>";
-      var deleteTd = "<td><button data-id=" + c._id + " onclick='deleteData(event)'>delete</button></td>";
-      var updateTd = "<td><button data-id=" + c._id + " onclick='updateChair(event)'>update</button></td>";
+      var deleteTd = "<td><button class='btn btn-danger' data-id=" + c._id + " onclick='deleteData(event)'>delete</button></td>";
+      var updateTd = "<td><button class='btn btn-success' data-id=" + c._id + " onclick='updateChair(event)'>update</button></td>";
       var closingTr = "</tr>";
 
       $('#chairTable').append(openingTr + modelTd + typeTd + deleteTd + updateTd + closingTr);
